@@ -1,90 +1,89 @@
-/* Generell styling for hele siden */
+/* Generell styling for body */
 body {
-    font-family: Arial, sans-serif; /* Setter en lettlest font */
-    background-color:hotpink; /* Lys grå bakgrunn for bedre kontrast */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: Arial, sans-serif; /* Bruker Arial font for tekst */
+    background-color: #f4f4f4; /* Lys grå bakgrunnsfarge for hele siden */
+    margin: 0; /* Fjerner standard margin */
+    padding: 0; /* Fjerner standard padding */
+    display: flex; /* Bruker flexbox for å sentrere innholdet */
+    justify-content: center; /* Sentraliserer innhold horisontalt */
+    align-items: center; /* Sentraliserer innhold vertikalt */
+    height: 100vh; /* Setter høyden til 100% av visningsområdet (viewport) */
 }
 
-/* Stil for hovedbeholderen */
+/* Styling for hovedcontaineren */
 .container {
-    background: white;
-    padding: 20px;
-    border-radius: 8px; /* Runde hjørner for en moderne look */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Myk skygge for dybdeeffekt */
-    width: 400px;
+    background: white; /* Hvit bakgrunnsfarge for containeren */
+    padding: 20px; /* Legger til 20px innvendig avstand (padding) */
+    border-radius: 8px; /* Runde hjørner for et mer moderne utseende */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Myk skygge for å gi dybdeeffekt */
+    width: 400px; /* Setter bredden på containeren til 400px */
 }
 
-/* Sentraljustering av overskrifter */
+/* Sentraljustering av overskrifter (h1, h2, h3) */
 h1, h2, h3 {
-    text-align: center;
+    text-align: center; /* Justerer teksten til midten */
 }
 
-/* Stil for skjemaet */
+/* Styling for form-elementet */
 form {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Bruker flexbox for å arrangere elementene */
+    flex-direction: column; /* Arrangerer elementene vertikalt */
 }
 
-/* Styling for inputfelt, tekstområder, dropdown-meny og knapper */
+/* Styling for input-felt, tekstområder, dropdown-meny og knapper */
 input, textarea, select, button {
-    margin: 5px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin: 5px 0; /* Legger til 5px margin på toppen og bunnen */
+    padding: 10px; /* Legger til 10px padding innvendig */
+    border: 1px solid #ccc; /* Grå ramme rundt input-feltene */
+    border-radius: 5px; /* Runde kanter på input-felt og knapper */
 }
 
-/* Stil for knapper */
+/* Styling for knapper */
 button {
-    background: #28a745; /* Grønn farge for handling */
-    color: white;
-    cursor: pointer;
-    border: none;
+    background: #28a745; /* Grønn bakgrunnsfarge på knappen */
+    color: white; /* Hvite bokstaver på knappen */
+    cursor: pointer; /* Endrer musepekeren til en hånd for bedre interaktivitet */
+    border: none; /* Fjerner standard ramme rundt knappen */
 }
 
-/* Endre farge ved hover for bedre brukeropplevelse */
+/* Styling for knappen ved hover (når musen er over knappen) */
 button:hover {
-    background: #218838;
+    background: #218838; /* Mørkere grønn farge når man holder musen over */
 }
 
-/* Stil for oppgaveliste-beholderen */
+/* Styling for oppgaveliste-containeren */
 .task-container {
-    margin-top: 20px;
+    margin-top: 20px; /* Legger til 20px margin på toppen for å skille fra skjemaet */
 }
 
-/* Fjerner standard listeformatering */
+/* Fjerner standard listeformatering for ul */
 ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Fjerner punktmerkene fra listen */
+    padding: 0; /* Fjerner padding rundt listen */
 }
 
-/* Stil for oppgaveelementer */
+/* Styling for hvert oppgaveelement (li) */
 li {
-    background: #ddd;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: #ddd; /* Lys grå bakgrunnsfarge for oppgavelisten */
+    margin: 5px 0; /* Legger til 5px margin på toppen og bunnen av hvert element */
+    padding: 10px; /* Legger til 10px innvendig padding */
+    border-radius: 5px; /* Runde hjørner på hvert oppgaveelement */
+    display: flex; /* Bruker flexbox for å arrangere innholdet horisontalt */
+    justify-content: space-between; /* Fordeler plass mellom innholdet på høyre og venstre side */
+    align-items: center; /* Vertikal sentrering av innholdet */
 }
 
-/* Stil for slett-knappen */
+/* Styling for slett-knappen */
 .delete-btn {
-    background: #dc3545; /* Rød farge for sletting */
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
+    background: #dc3545; /* Rød bakgrunnsfarge på slett-knappen */
+    color: white; /* Hvite bokstaver på slett-knappen */
+    border: none; /* Fjerner standard ramme rundt knappen */
+    padding: 5px 10px; /* Legger til padding for å gjøre knappen større og mer klikkbar */
+    cursor: pointer; /* Endrer musepekeren til en hånd for bedre interaktivitet */
+    border-radius: 5px; /* Runde kanter på slett-knappen */
 }
 
-/* Endre farge ved hover for bedre visuell indikasjon */
+/* Styling for slett-knappen ved hover (når musen er over knappen) */
 .delete-btn:hover {
-    background: #c82333;
+    background: #c82333; /* Mørkere rød farge når musen holdes over knappen */
 }
-
