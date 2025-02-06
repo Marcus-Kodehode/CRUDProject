@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgavebehandling</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lenker til CSS-filen for styling -->
+</head>
+<body>
+    <div class="container">
+        <h1>Oppgavebehandling</h1>
+        
+        <!-- Skjema for å legge til en ny oppgave -->
+        <form id="taskForm">
+            <input type="text" id="title" placeholder="Tittel" required> <!-- Input-felt for oppgavetittel -->
+            <textarea id="description" placeholder="Beskrivelse" required></textarea> <!-- Tekstområde for oppgavebeskrivelse -->
+            <select id="status"> <!-- Dropdown-meny for å velge oppgavestatus -->
+                <option value="Ikke påbegynt">Ikke påbegynt</option>
+                <option value="I gang">I gang</option>
+                <option value="Fullført">Fullført</option>
+            </select>
+            <button type="submit">Legg til oppgave</button> <!-- Knapp for å legge til oppgaven -->
+        </form>
+        
+        <!-- Seksjon for å vise oppgaver sortert etter status -->
+        <div class="task-container">
+            <h2>Oppgaveliste</h2>
+            
+            <h3>Ikke påbegynt</h3>
+            <ul id="notStartedList"></ul> <!-- Liste for oppgaver som ikke er påbegynt -->
+            
+            <h3>I gang</h3>
+            <ul id="inProgressList"></ul> <!-- Liste for oppgaver som er i gang -->
+            
+            <h3>Fullført</h3>
+            <ul id="completedList"></ul> <!-- Liste for fullførte oppgaver -->
+        </div>
+    </div>
+    
+    <script defer src="main.js"></script> <!-- Lenker til JavaScript-filen for funksjonalitet -->
+</body>
+</html>

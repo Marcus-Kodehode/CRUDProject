@@ -1,0 +1,90 @@
+/* Generell styling for hele siden */
+body {
+    font-family: Arial, sans-serif; /* Setter en lettlest font */
+    background-color:hotpink; /* Lys grå bakgrunn for bedre kontrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Stil for hovedbeholderen */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px; /* Runde hjørner for en moderne look */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Myk skygge for dybdeeffekt */
+    width: 400px;
+}
+
+/* Sentraljustering av overskrifter */
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Stil for skjemaet */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for inputfelt, tekstområder, dropdown-meny og knapper */
+input, textarea, select, button {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Stil for knapper */
+button {
+    background: #28a745; /* Grønn farge for handling */
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+/* Endre farge ved hover for bedre brukeropplevelse */
+button:hover {
+    background: #218838;
+}
+
+/* Stil for oppgaveliste-beholderen */
+.task-container {
+    margin-top: 20px;
+}
+
+/* Fjerner standard listeformatering */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Stil for oppgaveelementer */
+li {
+    background: #ddd;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Stil for slett-knappen */
+.delete-btn {
+    background: #dc3545; /* Rød farge for sletting */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Endre farge ved hover for bedre visuell indikasjon */
+.delete-btn:hover {
+    background: #c82333;
+}
+
